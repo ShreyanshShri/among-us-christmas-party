@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paarty Room</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./imgs/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="chat-box">
+        <div class="msgs"></div>
+        <div class="send">
+            <input type="text" id="chat-inp">
+            <button class="send-btn"><img src="./imgs/send-btn.png" alt="send-button-logo"></button>
+        </div>
+    </div>
+    <div class="left-controls">
+        <!-- arrow icons by https://www.iconfinder.com/iconsets/arrows-173 -->
+        <span class="up-arrow control-btn"><img src="./imgs/up-arrow.svg" alt="up-arrow" class="arrow-icon"></span><br>
+        <span class="down-arrow control-btn"><img src="./imgs/down-arrow.svg" alt="down-arrow" class="arrow-icon down-arrow-icon"></span>
+    </div>
+    <div class="right-controls">
+        <span class="left-arrow control-btn"><img src="./imgs/left-arrow.svg" alt="left-arrow" class="arrow-icon"></span>
+        <span class="right-arrow control-btn"><img src="./imgs/right-arrow.svg" alt="right-arrow" class="arrow-icon right-arrow-icon"></span>
+    </div>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+        crossorigin="anonymous"
+  ></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="./js/spriteData.js"></script>
+  <script src='./js/script.js'></script>
+  <script src="./js/render_players.js"></script>
+  <script src="./js/sendMsg.js"></script>
+</body>
+</html>
