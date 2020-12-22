@@ -15,7 +15,7 @@ const {
     getAllUsers,
   } = require('./utils/user')
 
-// declare static files path
+// declare static files
 app.use(express.static('./views'))
 
 // once socket connected
@@ -28,7 +28,6 @@ io.on('connection', socket => {
         // create and join the user
         userJoin(user)
         socket.broadcast.emit('userJoined', user)
-        io.emit('playerMoves', getAllUsers())
         // when any of player moves
         socket.on('movePlayer', (player) => {
           // get the user and update it
@@ -64,4 +63,4 @@ app.get('/', (req, res) => {
 
 // run the server
 const PORT = process.env.PORT || 3000
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+server.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`))

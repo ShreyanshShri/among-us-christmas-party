@@ -56,17 +56,15 @@ class Player {
     // render player with username
     show() {
         fill(0, 0, 20)
-        text(this.username, this.x, this.y-10)
+        text(this.username, this.x + 20, this.y-10)
         let i;
         if(this.isStanding == true) {
             i = 0
-            this.width = 60
         } else {
-            i = floor(this.index) % spriteData[this.dir].length;
-            this.width = 80
+            i = floor(this.index) % spriteData[this.dir].length
         }
         let pixelated = img.get(spriteData[this.dir][i].position.x, spriteData[this.dir][i].position.y, spriteData[this.dir][i].position.w, spriteData[this.dir][i].position.h)
-        image(pixelated, this.x, this.y, this.width, this.height);
+        image(pixelated, this.x, this.y, this.width, this.height)
         if(frameCount % 18 == 0){
             this.isStanding = true
             this.index = 0

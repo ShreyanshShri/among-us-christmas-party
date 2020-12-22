@@ -5,6 +5,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: sans-serif;
 }
 .chat-box{
     position: absolute;
@@ -61,6 +62,12 @@ hr {
 }
 .message {
     opacity: 0.86;
+}
+.control-btn{
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
 }
 .left-controls{
     position: fixed;
