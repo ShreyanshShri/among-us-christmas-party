@@ -63,7 +63,7 @@ $e( $('.down-arrow'),
       function() {
          downTimeout = setInterval(function() {
             movePlayer('down')
-        }, 35)    
+        }, 35)
       }
 )
 $e( $('.down-arrow'),
