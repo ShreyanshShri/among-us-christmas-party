@@ -21,6 +21,6 @@ socket.on('recieve-msg', ({msg, username}) => {
     el.style.padding = '5px'
     // append msg to msg-box
     const msgBox = document.querySelector('.msgs')
-    msgBox.scrollTop = msgBox.scrollHeight
     msgBox.appendChild(el)
+    msgBox.scrollTop = msgBox.scrollHeight
 })

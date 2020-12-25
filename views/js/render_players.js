@@ -25,13 +25,6 @@ function draw() {
         bubble.faded()
         bubble.display()
     }
-    push()
-    fill(random(180,225),100,random(180,225))
-    textSize(25)
-    textFont("sans-serif")
-    textAlign(CENTER)
-    text("Happy Birthday\nRose Didi\n🥳🎊🎂🍰🍫😜🎉",width/2,height-150)
-    pop()
     // check if player exists or not
     if(curr_player != null || curr_player != undefined) {
         for(player of players) {

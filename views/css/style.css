@@ -7,6 +7,9 @@ body {
     overflow: hidden;
     font-family: sans-serif;
 }
+canvas{
+    z-index: -100;
+}
 .chat-box{
     position: absolute;
     top: 10px;
@@ -68,12 +71,14 @@ hr {
     border: none;
     outline: none;
     background: none;
+    z-index: 100;
 }
 .left-controls{
     position: fixed;
     bottom: 20px;
     left: 20px;
     padding: 4px;
+    z-index: 100;
 }
 .right-controls{
     position: fixed;
@@ -81,6 +86,7 @@ hr {
     right: 20px;
     padding: 4px;
     display: flex;
+    z-index: 100;
 }
 .control-btn {
     cursor: pointer;
@@ -93,4 +99,42 @@ hr {
 }
 .right-controls{
     margin-bottom: 20px;
+}
+.christmas-tree{
+    position: fixed;
+    width: 285px;
+    height: 60vh;
+    top: 10px;
+    right: 10px;
+}
+.snowman{
+    position: fixed;
+    filter: invert(0);
+    width: 70px;
+    height: 106px;   
+}
+.s1{
+    top: 100px;
+    left: 34vw;  
+}
+.s2{
+    left: 14vw;
+    bottom: 10vh;
+}
+.s3{
+    right: 200px;
+    bottom: 30vh;
+}
+@media (max-width: 600px) {
+    .christmas-tree{
+        right: -100px;
+    }
+}
+.heading{
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    font-size: 2em;
+    width: 100vw;
+    color: rgb(241, 12, 12);
 }
