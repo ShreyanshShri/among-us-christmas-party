@@ -29,8 +29,6 @@ socket.on('userJoined', (user) => {
     players.push(new Player(user.x, user.y, 'right', 0, user.username, user.id))
 })
 
-// alert('If you face any issues with scaling then zoom out your ')
-
 // when any of player moves
 socket.on('playerMoves', (users) => {
     // create and update new player array
